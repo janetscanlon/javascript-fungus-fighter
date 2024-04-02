@@ -93,13 +93,21 @@ function renderAttack(){
 
     // change class if fungusHP === 0 
 
-    if(fungusHP === 0){
-    // select the fungus class element 
-    let fungusClass = document.getElementById("freakyFungus")
-    //toggle the class with fungusdead element.classList.toggle("mystyle");
+    // if(fungusHP === 0){
+    // // select the fungus class element 
+    // let fungusClass = document.getElementById("freakyFungus")
+    // //toggle the class with fungusdead element.classList.toggle("mystyle");
     
-    fungusClass.classList.toggle("freaky-fungus dead")
-    //fungusWalk.classList.toggle("freaky-fungus dead")
+    // fungusClass.classList.toggle("freaky-fungus dead")
+    // //fungusWalk.classList.toggle("freaky-fungus dead")
+    // }
+
+    if(userAP === 0){ 
+        // add disabled attribute to all attack buttons 
+        //select where to add the disabled attribute 
+        let arcaneAttack = document.getElementsByClassName("attack-btn arcane-scepter")
+        arcaneAttack.textContent= `<button disabled class="attack-btn arcane-scepter" onclick="onArcane()"></button>`
+        
     }
 }
 
