@@ -7,7 +7,6 @@
 let fungusHP = 100;
 let userAP = 100;
 
-
 //create onAttack functions 
 
 function onArcane(){
@@ -15,7 +14,26 @@ function onArcane(){
     fungusHP -= 14;
     userAP -= 12; 
 }
+
+function onEntangle(){
+    //update the state variables for the changes after Arcane Attack 
+    fungusHP -= 9;
+    userAP -= 23;
     
+}
+
+function onDragonBlade(){
+    //update the state variables for the changes after Arcane Attack 
+    fungusHP -= 47;
+    userAP -= 38;
+    
+}
+
+function onStarFire(){
+    //update the state variables for the changes after Arcane Attack 
+    fungusHP -= 25;
+    userAP -= 33;
+}
     // Make sure you check the index.html file! 
     // There are lots of buttons and things ready for you to hook into here!
     
