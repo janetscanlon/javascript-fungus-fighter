@@ -78,7 +78,29 @@ function onStarFire(){
 }
 
 function renderAttack(){ 
-console.log('rendered clicked!')
+
+    //select the user AP text
+    let APAmount = document.getElementById('APAmount');
+    
+    //update the rendered APAmount with the new state variable 
+    APAmount.textContent = userAP;
+    
+    //select the fungus HP text
+    let fungusHPAmount = document.getElementById('fungusHPAmount');
+
+    //update the rendered HPAmount with the new state variable 
+    fungusHPAmount.textContent = fungusHP;
+
+    // change class if fungusHP === 0 
+
+    if(fungusHP === 0){
+    // select the fungus class element 
+    let fungusClass = document.getElementById("freakyFungus")
+    //toggle the class with fungusdead element.classList.toggle("mystyle");
+    
+    fungusClass.classList.toggle("freaky-fungus dead")
+    //fungusWalk.classList.toggle("freaky-fungus dead")
+    }
 }
 
 
